@@ -498,7 +498,6 @@ const KeyNumbers: React.FC = () => (
                     display: "flex",
                     flexWrap: "wrap",
                     gap: 2,
-                    color: "rgba(255,255,255,0.9)",
                 }}
             >
                 <NumberCard
@@ -537,10 +536,10 @@ const NumberCard: React.FC<{ title: string; subtitle: string }> = ({
         }}
     >
         <CardContent>
-            <Typography variant="subtitle1" sx={{ mb: 0.5 }}>
+            <Typography variant="subtitle1" sx={{ mb: 0.5, color: "rgba(255,255,255,0.7)" }}>
                 {title}
             </Typography>
-            <Typography variant="body2" sx={{ opacity: 0.7 }}>
+            <Typography variant="body2" sx={{ opacity: 0.7, color: "rgba(255,255,255,0.7)" }}>
                 {subtitle}
             </Typography>
         </CardContent>
@@ -614,7 +613,7 @@ const ProblemsSection: React.FC = () => (
                             >
                                 Боль отдела
                             </Typography>
-                            <Typography variant="body2" sx={{ opacity: 0.85 }}>
+                            <Typography variant="body2" sx={{ opacity: 0.85, color: "rgba(255,255,255,0.7)" }}>
                                 {p}
                             </Typography>
                         </CardContent>
