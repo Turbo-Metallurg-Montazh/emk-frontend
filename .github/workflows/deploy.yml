@@ -41,4 +41,4 @@ jobs:
         run: |
           echo "${{ secrets.K3S_KUBECONFIG }}" > kubeconfig
           kubectl --kubeconfig=kubeconfig apply -f k8s/
-          kubectl --kubeconfig=kubeconfig rollout restart deployment/emk-frontend
+          kubectl --kubeconfig=kubeconfig rollout restart deployment/emk-frontend -n frontend
