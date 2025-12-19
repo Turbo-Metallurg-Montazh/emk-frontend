@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: emk-frontend
+  namespace: frontend
+spec:
+  rules:
+    - host: turbo-metallurg-montazh.ru
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: emk-frontend
+                port:
+                  number: 80

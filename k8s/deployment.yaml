@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emk-frontend
+  namespace: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: emk-frontend
+  template:
+    metadata:
+      labels:
+        app: emk-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: ghcr.io/turbo-metallurg-montazh/emk-frontend:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 300m
+              memory: 256Mi
