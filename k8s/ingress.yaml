@@ -4,6 +4,10 @@ metadata:
   name: emk-frontend
   namespace: frontend
 spec:
+  tls:
+    - hosts:
+        - turbo-metallurg-montazh.ru
+      secretName: cloudflare-origin-cert
   rules:
     - host: turbo-metallurg-montazh.ru
       http:
