@@ -498,6 +498,7 @@ const KeyNumbers: React.FC = () => (
                     display: "flex",
                     flexWrap: "wrap",
                     gap: 2,
+                    color: "rgba(255,255,255,0.9)",
                 }}
             >
                 <NumberCard
