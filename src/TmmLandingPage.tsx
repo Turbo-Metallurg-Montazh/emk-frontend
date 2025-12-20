@@ -21,7 +21,7 @@ import InventoryIcon from "@mui/icons-material/Inventory";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import InsightsIcon from "@mui/icons-material/Insights";
 
-import Galaxy from "./components/ReactBits/GalaxyBackground/Galaxy.tsx";
+import LightPillar from "./components/ReactBits/backgrounds/LightPillar/LightPillar.tsx";
 
 const features = [
     {
@@ -110,7 +110,7 @@ export const TmmLandingPage: React.FC = () => {
 
                 }}
             >
-                <Galaxy />
+                <LightPillar/>
             </Box>
 
             <Box
