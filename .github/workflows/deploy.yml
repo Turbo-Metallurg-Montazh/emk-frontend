@@ -1,17 +1,8 @@
 name: Deploy Frontend to VPS
 
 on:
-  workflow_dispatch:
-    inputs:
-      bump:
-        description: "Which version to bump?"
-        type: choice
-        required: true
-        default: patch
-        options:
-          - major
-          - minor
-          - patch
+  push:
+    branches: [ master ]
 
 jobs:
   deploy:
