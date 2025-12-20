@@ -21,7 +21,7 @@ import InventoryIcon from "@mui/icons-material/Inventory";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import InsightsIcon from "@mui/icons-material/Insights";
 
-import Galaxy from "./components/ReactBits/backgrounds/Galaxy/Galaxy.tsx";
+import Galaxy from "../components/ReactBits/backgrounds/Galaxy/Galaxy.tsx";
 
 const features = [
     {
@@ -88,7 +88,7 @@ const valueBullets = [
     "Снижение рисков участия в проблемных закупках за счёт системной проверки контрагентов",
 ];
 
-export const TmmLandingPage: React.FC = () => {
+export const TmmLanding: React.FC = () => {
     return (
         <Box
             sx={{
@@ -1091,4 +1091,4 @@ const Footer: React.FC = () => (
     </Container>
 );
 
-export default TmmLandingPage;
+export default TmmLanding;
