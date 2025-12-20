@@ -21,7 +21,7 @@ import InventoryIcon from "@mui/icons-material/Inventory";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import InsightsIcon from "@mui/icons-material/Insights";
 
-import LightPillar from "./components/ReactBits/backgrounds/LightPillar/LightPillar.tsx";
+import Galaxy from "./components/ReactBits/backgrounds/Galaxy/Galaxy.tsx";
 
 const features = [
     {
@@ -110,7 +110,7 @@ export const TmmLandingPage: React.FC = () => {
 
                 }}
             >
-                <LightPillar/>
+                <Galaxy/>
             </Box>
 
             <Box
@@ -677,6 +677,7 @@ const FeaturesSection: React.FC = () => (
                             bgcolor: "rgba(15,23,42,0.9)",
                             display: "flex",
                             flexDirection: "column",
+                            color: "white"
                         }}
                     >
                         <CardContent sx={{ flexGrow: 1 }}>
@@ -770,7 +771,7 @@ const WorkflowSection: React.FC = () => (
                     }}
                 >
                     <CardContent>
-                        <Typography variant="subtitle1" sx={{ mb: 1.5 }}>
+                        <Typography variant="subtitle1" sx={{ mb: 1.5, color: "white" }}>
                             Как TMM работает «под капотом»
                         </Typography>
                         <Stack spacing={1}>
@@ -816,8 +817,8 @@ const WorkflowRow: React.FC<{ stage: string; detail: string }> = ({
             }}
         />
         <Box>
-            <Typography variant="subtitle2">{stage}</Typography>
-            <Typography variant="body2" sx={{ opacity: 0.76 }}>
+            <Typography variant="subtitle2" sx={{ color: "white" }}>{stage}</Typography>
+            <Typography variant="body2" sx={{ opacity: 0.76, color: "white" }}>
                 {detail}
             </Typography>
         </Box>
@@ -913,6 +914,7 @@ const RoleCard: React.FC<{
                 borderRadius: 3,
                 borderColor: "rgba(51,65,85,0.9)",
                 bgcolor: "rgba(15,23,42,0.9)",
+                color: "white"
             }}
         >
             <CardContent>
@@ -924,8 +926,9 @@ const RoleCard: React.FC<{
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        bgcolor: "rgba(30,64,175,0.8)",
+                        bgcolor: "rgba(148,163,184,0.18)",
                         mb: 1.3,
+                        p: 0.5
                     }}
                 >
                     {React.cloneElement(icon)}
@@ -956,10 +959,9 @@ const CTASection: React.FC = () => (
             sx={{
                 borderRadius: 4,
                 borderColor: "rgba(79,70,229,0.8)",
-                bgcolor:
-                    "radial-gradient(circle at top left, rgba(79,70,229,0.5), rgba(15,23,42,0.98))",
                 boxShadow:
                     "0 24px 80px rgba(15,23,42,0.95), 0 0 60px rgba(79,70,229,0.7)",
+                backgroundColor: "rgba(29,33,113,0.89)"
             }}
         >
             <CardContent sx={{ p: { xs: 3, md: 4 } }}>
@@ -971,7 +973,7 @@ const CTASection: React.FC = () => (
                         alignItems: "center",
                     }}
                 >
-                    <Box sx={{ flex: 1 }}>
+                    <Box sx={{ flex: 1, color: "white" }}>
                         <Typography
                             variant="h4"
                             sx={{
@@ -1028,8 +1030,10 @@ const CTASection: React.FC = () => (
                             sx={{
                                 p: 2,
                                 borderRadius: 3,
-                                bgcolor: "rgba(15,23,42,0.9)",
+                                background:
+                                    "linear-gradient(120deg, #4f46e5, #06b6d4)",
                                 border: "1px solid rgba(148,163,184,0.6)",
+                                color: "white"
                             }}
                         >
                             <Typography variant="subtitle2" sx={{ mb: 1 }}>
