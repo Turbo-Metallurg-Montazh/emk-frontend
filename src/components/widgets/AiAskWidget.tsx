@@ -43,7 +43,7 @@ export type AiAskWidgetProps = {
 };
 
 export const AiAskWidget: React.FC<AiAskWidgetProps> = ({
-                                                            endpoint = "/api/public-ai/chat",
+                                                            endpoint = "https://api.turbo-metallurg-montazh.ru/public-ai/chat",
                                                             title = "Спросить AI",
                                                             systemPrompt = "Ты универсальный помощник для сотрудников. Отвечай кратко и по делу. Если вопрос неоднозначный — уточни.",
                                                         }) => {
